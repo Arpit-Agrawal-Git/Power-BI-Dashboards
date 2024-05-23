@@ -1,6 +1,6 @@
 ## M Query Applications (To go beyond what Power Query UI offers)
 
-###List of Lists :
+### List of Lists :
 
 "Grouped Rows" = Table.Group(#"Filtered Rows", {"ID","Created_Date", "Trainer"}, {{"PV", each List.Combine({[Product_Category.Value]}), type text}}),
 
